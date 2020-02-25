@@ -1,0 +1,1 @@
+# this is just an info file.txt to check if directory is properly linked
