@@ -1,0 +1,14 @@
+.headerBar{
+    
+    background-color:#002C43;
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    text-align: right;
+  }
+  .headerBar > span{
+    color: #fff;
+    display: block;
+    margin-right: 1em;
+  }
+  
