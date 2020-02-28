@@ -1,0 +1,69 @@
+
+
+
+.repoInfoContainer{
+
+    background-image: url('../images/folder.svg');
+    background-clip: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: initial;
+    display: block;
+    width: 30%;
+    margin: auto;
+    max-height: 200px;
+    height: 200px;
+    margin-top: 2em;
+    position: relative;
+}
+
+.emptyContainer{
+
+    width: 30%;
+    display: block;
+    max-height: 300px;
+    margin: auto;
+}
+
+.dataList{
+
+    display: block;
+    width: 50%;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    list-style: none;
+    padding-left:0;
+    max-height: 50%;
+    overflow: scroll;
+}
+
+.dataList .dataListField{
+
+    display: block;
+    width: 100%;
+    font-size: 0.8em;
+    text-align: left;
+    padding-left: 1.5em;
+
+}
+
+
+.dataList .dataListField .name{
+
+    color: #002C43;
+    font-weight: bold;;
+
+}
+
+
+
+@media (max-width: 700px){
+
+    .repoInfoContainer{
+
+        width: 60%;
+        margin: auto;
+    }
+    
+}

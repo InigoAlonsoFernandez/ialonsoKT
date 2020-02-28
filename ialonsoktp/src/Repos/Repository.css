@@ -1,0 +1,89 @@
+
+
+.blockRepository{
+
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0.5em auto;
+    border: 1px outset #002C43;
+    padding: 0.3em;
+    border-radius: 5px;
+
+}
+
+.blockRepository .blockLogoRepository{
+
+    display: block;
+    width: 15%;
+    position:relative;
+
+}
+
+.blockRepository .blockLogoRepository .logoRepositoryContainer{
+
+    position: absolute;
+    left:  10%;
+    width: 80%;
+    display: block;
+    top: 10%;
+    height: 100%;
+}
+
+.blockRepository .blockLogoRepository .logoRepositoryContainer img{
+
+    width: 100%;
+    display: block;
+}
+
+.blockRepository .blockLogoRepository {
+
+    display: block;
+    width: 15%;
+
+}
+
+.blockRepository .blockNameRepository{
+
+    display: block;
+    width: 60%;
+}
+
+.blockRepository .blockNameRepository span{
+
+    color: #000;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.blockRepository .blockViewsRepository{
+
+    display: block;
+    width: 30%;
+    text-align: center;
+    
+
+}
+
+.blockRepository .blockViewsRepository img{
+
+    display: block;
+    width: 30%;
+    margin: auto;
+
+}
+
+.blockRepository .blockViewsRepository span{
+
+    font-size: 0.8em;
+    color: lightgrey;
+    width: 80%;
+    margin:auto;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+
+

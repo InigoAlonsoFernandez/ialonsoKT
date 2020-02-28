@@ -1,0 +1,70 @@
+
+.blockOrganisation{
+
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0.5em auto;
+    border: 1px outset #002C43;
+    padding: 0.3em;
+    border-radius: 5px;
+    
+}
+
+.blockOrganisation .orgBlockImage{
+
+    width: 15%;
+    vertical-align: middle;
+    position: relative;
+}
+
+.blockOrganisation .orgData{
+
+    width: 85%;
+    vertical-align: middle;
+    border-left: 1px dotted black;
+    height: auto;
+
+}
+
+.blockOrganisation .orgData span{
+
+    color: #000;
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+
+.blockOrganisation .orgData .organisationName{
+
+    color: #000;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.blockOrganisation .orgData .organisationRepositoriesName{
+
+    color: #002C43;
+    font-size: 0.6em;
+
+}
+
+.blockOrganisation .orgBlockImage .imgContainer{
+
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    height: 50%;
+    width: 80%;
+    display: block;
+
+}
+
+.blockOrganisation .orgBlockImage .imgContainer img{
+
+    width: 100%;
+    display: block;
+    margin: auto;
+
+}

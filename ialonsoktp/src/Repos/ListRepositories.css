@@ -1,0 +1,44 @@
+
+
+
+.listRepositories{
+
+    list-style: none;
+    display: block;
+    width: 30%;
+    margin: auto;
+    padding-left: 0px;
+    max-height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+.listRepositories > .titleRepository{
+
+    display: block;
+    width: 30%;
+    
+}
+
+.listRepositories > .rowRepository{
+
+    display: block;
+    width: 100%;
+    margin: 1em 0.5em;
+
+}
+
+
+@media (max-width: 700px){
+
+    .listRepositories{
+
+        width: 80%;
+        margin: 1em auto 2em auto;
+        
+
+    }
+
+    
+}

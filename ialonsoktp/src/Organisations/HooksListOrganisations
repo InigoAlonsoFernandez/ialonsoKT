@@ -1,0 +1,111 @@
+import React, { useState } from 'react';
+
+import './ListOrganisations.css';
+
+import Organisation from './Organisation';
+
+
+
+class ListOrganisations extends Component{
+const listorganisations = props =>{
+
+    const state={
+
+        organisations:[{
+
+            name:"o1",
+            numberRepositories:10
+        },{
+
+            name:"o2",
+            numberRepositories:20
+        },{
+
+            name:"o3",
+            numberRepositories: 30
+
+        }]
+    }
+
+
+    const [organisationState, setOrganisationsState] = useState({
+
+        organisations: [
+        {
+            name: "organisation1",
+            numberRepositories:30
+
+        },{
+            name:"organisation2",
+            numberRepositories: 20
+        },
+        {
+            name:"organisation3",
+            numberRepositories: 30
+        }],
+
+    });
+
+    const [otherState, setOtherState] = useState("other value");
+
+
+    console.log(organisationState, otherState);
+
+
+    const switchNameHandler = () =>{
+
+        this.state({
+            organisations:[{
+
+                name: "Org10",
+                numberRepositories: "10"
+            },{
+                name:"Org11",
+                numberRepositories:"20"
+
+            }]
+        });
+
+
+
+        setOrganisationsState({
+            organisations:[
+            {
+                name: "organisation4",
+                numberRepositories: 50
+            },
+            {
+                name: "organisation4",
+                numberRepositories: 50
+            }]
+        });
+    };
+
+
+        return (
+            
+            <ul className="listOrganisations">
+                <li className="rowList" onClick={switchNameHandler}>
+                <Organisation 
+                    name={organisationState.organisations[0].name} 
+                    numberRepositories={organisationState.organisations[0].numberRepositories} 
+                />
+                </li>
+                <li className="rowList">
+                    <Organisation 
+                    name={organisationState.organisations[1].name} 
+                    numberRepositories={organisationState.organisations[1].numberRepositories} 
+                />
+                </li>
+                <li className="rowList">
+                    <Organisation 
+                        name={organisationState.organisations[1].name} 
+                        numberRepositories={organisationState.organisations[1].numberRepositories} 
+                    />
+                </li>
+
+            </ul>
+        )
+};
+
+export default listorganisations;

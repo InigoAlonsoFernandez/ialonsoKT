@@ -1,0 +1,14 @@
+
+
+.searchButton{
+
+    background-color: lightgrey;
+    display: block;
+    width: 100%;
+    color: #fff;
+    height: 100%;
+}
+
+.searchButton:hover{
+    background-color: #005C43;
+}

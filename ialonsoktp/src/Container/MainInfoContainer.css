@@ -1,0 +1,25 @@
+
+
+
+.mainInfoContainer{
+
+    width: 80%;
+    left: 10%;
+    height: 80%;
+    display: block;
+    position: absolute;
+
+}
+
+
+
+@media (max-width: 700px){
+
+
+    .mainInfoContainer{
+        height: auto;
+        margin:auto;
+        position: static;
+    }
+    
+}

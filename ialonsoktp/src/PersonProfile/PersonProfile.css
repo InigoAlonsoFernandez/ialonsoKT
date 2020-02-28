@@ -1,0 +1,225 @@
+
+
+
+.profileContainer{
+
+    display: block;
+    position: absolute;
+    padding: 0.5em;
+    top: 5%;
+    left: 35%;
+    width: 30%;
+    height: 30%;
+
+}
+
+.profileContainer .profileTop{
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    
+}
+
+
+
+.profileContainer .profileTop .avatarImageContainer{
+
+    display:block;
+    width: 30%;
+    height: 50%;
+    margin: auto;
+    
+
+}
+
+.profileContainer .profileTop .avatarImageContainer img{
+
+    display:block;
+    width: 90%;
+    height: 90%;
+    
+}
+
+.profileContainer .profileTop .userMainDataContainer{
+
+    display:block;
+    width: 70%;
+    
+}
+
+.profileContainer .profileTop .userMainDataContainer .userMainData{
+
+    display:block;
+    width: 100%;
+    list-style: dot;
+    font-size: 0.8em;
+    text-align: left;
+    width: 80%;
+    margin: 0.2em auto;
+    
+}
+
+.profileContainer .profileTop .userMainDataContainer .userMainData .infoText{
+
+    font-weight: bold;
+    color: #000;
+    
+}
+
+
+
+
+
+.profileContainer .profileBottom{
+
+    display: block;
+    width: 100%;
+    text-align: left;
+
+}
+
+.profileContainer .profileBottom .personDescription{
+
+    display: block;
+    width: 100%;
+    font-size: 0.8em;
+
+}
+
+.profileContainer .profileBottom .personDescription span{
+
+    display: block;
+    width: 100%;
+    color: #000;
+    font-weight: bold;
+    
+}
+
+.profileContainer .profileBottom .personDescription p{
+
+    display: block;
+    width: 100%;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 950px) and (max-width: 1200px){
+
+    .profileContainer{
+
+        width: 40%;
+        
+    
+    }
+
+
+}
+
+
+
+@media (min-width: 700px) and (max-width: 950px){
+
+    .profileContainer{
+
+        width: 45%;
+    
+    }
+}
+
+
+@media (max-width: 700px){
+
+    .profileContainer{
+
+        width: 80%;
+        display: block;
+        margin:auto;
+        height: auto;
+        position: static;
+        
+    }
+
+    .profileContainer .profileTop{
+
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+
+    .profileContainer .profileBottom{
+
+        display: block;
+        width: 80%;
+        margin:auto;
+        font-size: 0.8em;
+    
+    }
+
+    .profileContainer .profileBottom .personDescription{
+
+        display: block;
+        width: 100%;
+        font-size: 0.8em;
+        text-overflow: ellipsis;
+    
+    }
+    
+    .profileContainer .profileTop .avatarImageContainer{
+
+        display:block;
+        width: 60%;
+        margin: auto;
+    }
+
+    .profileContainer .profileTop .userMainDataContainer{
+
+        display:block;
+        width: 60%;
+        margin:auto;
+        
+    }
+
+    .profileContainer .profileTop .userMainDataContainer .userMainData{
+
+        list-style: none;
+        padding-left: 0px;
+        
+    }
+
+    .profileContainer .profileTop .userMainDataContainer .userMainData li  .infoText{
+
+        font-weight: bold;
+        display: inline;
+        
+    }
+
+
+    .profileContainer .profileTop .userMainDataContainer .userMainData li .data{
+
+        font-weight: bold;
+        display: inline;
+        
+    }
+
+
+    
+}

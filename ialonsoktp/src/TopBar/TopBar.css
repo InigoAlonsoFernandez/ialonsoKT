@@ -1,0 +1,66 @@
+.topBar{
+
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    position:relative;
+    margin: auto;
+    height: 50px;
+    background-color: #002C43;
+    padding: 10px 0.5em;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+
+.topBar > .logoBlock{
+
+    flex-wrap: nowrap;
+    width: 6%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.topBar > .boxUserSearch{
+
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+}
+
+
+.topBar > .nameBlock{
+
+    position: absolute;
+    right:0;
+    width: auto;
+    text-align: center;
+    font-size: 0.9em;
+    margin-right: 1em;
+}
+
+
+
+@media (max-width: 700px){
+
+    .topBar > .logoBlock{
+
+        width: 20%;
+        
+    }
+
+    .topBar > .boxUserSearch{
+
+        width: 75%;
+    }
+
+    .topBar > .nameBlock{
+
+        display: none;
+    }
+
+
+
+}
