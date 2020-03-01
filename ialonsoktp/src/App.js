@@ -84,7 +84,8 @@ class App extends Component {
         watchers: 1000,
       }],
       renderIntro:true,
-      inputField:""
+      inputField:"",
+      loading:false
     };
     
   }
@@ -98,7 +99,7 @@ class App extends Component {
   handleClickSearch= async()=>{
 
     const first=gitapi.getUserData(this.state.inputField).then(response => {
-        this.setState({orgs: response.orgs, user: response.user});
+        this.setState({orgs: response.orgs, user: response.user, loading:true});
       }).catch(error =>{
         
         if (error.response.status === 404){
@@ -112,7 +113,7 @@ class App extends Component {
         let myCA=[];
         sresponse.map(rp => myCA.push(rp));
 
-        this.setState({public_repos: myCA});
+        this.setState({public_repos: myCA, loading:true});
 
     }).catch(error =>{
 
@@ -129,6 +130,7 @@ class App extends Component {
     if(this.showInfo==true){
       Promise.all([first, second]).then(() =>{
         console.log(this.state);
+        this.setState({loading:false})
       });
     }
   }
@@ -158,7 +160,7 @@ class App extends Component {
         return (
           <div className="App">
             <NavTop click={this.handleClickSearch.bind(this)} type={this.handleChangeInput} userInfo={this.state.user.login}/>
-            <MainInfoContainer person={this.state.user} repositories={this.state.public_repos} organisations={this.state.orgs}/>
+            <MainInfoContainer person={this.state.user} repositories={this.state.public_repos} organisations={this.state.orgs} loading={this.state.loading}/>
             <CopyRights />
           </div>
         );
